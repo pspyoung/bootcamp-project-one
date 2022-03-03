@@ -1,21 +1,32 @@
 // Troops.js component
 
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 import React from 'react';
 
 function Troops(props) {
 	const [clashData, setClashData] = useState(null);
-	const { key } = useParams();
+	// const { key } = useParams();
+	useEffect(() => {
+		fetch('https://royaleapi.github.io/cr-api-data/json/cards.json')
+			.then((res) => res.json())
+			.then((data) => setClashData(data))
+
+			.catch(console.error);
+	}, []);
+	if (!clashData) {
+		return <div>Loading ...</div>;
+	}
 
 	return (
 		<div className="troops-list">
-			{/* {props.clashData.map((element) => {
-			console.log(clashData);
-		})} */}
-			{/* {props.clashData.name} */}
-			Filler Troops Data
+			{/* {clashData.map((element) => {
+				console.log(clashData);
+			})}
+			{clashData.key} */}
+
+			{props.name}
 		</div>
 	);
 }
