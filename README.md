@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+#### Clash Royale Fan Made project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+No copyright intended. All data belongs to SuperCel, and http://api.clasyroyale.com
+A website that renders updated Clash Royale Card and Deck Info.
 
-## Available Scripts
+## Link to the API you plan to use
 
-In the project directory, you can run:
+https://api.clashroyale.com/
 
-### `npm start`
+## Example data response you plan to use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+ {
+key: "minions",
+name: "Minions",
+sc_key: "Minions",
+elixir: 3,
+type: "Troop",
+rarity: "Common",
+arena: 0,
+description: "Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!",
+id: 26000005
+},
+{
+key: "balloon",
+name: "Balloon",
+sc_key: "Balloon",
+elixir: 5,
+type: "Troop",
+rarity: "Epic",
+arena: 6,
+description: "As pretty as they are, you won't want a parade of THESE balloons showing up on the horizon. Drops powerful bombs and when shot down, crashes dealing area damage.",
+id: 26000006
+},
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
 
-### `npm test`
+## Sample component hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://whimsical.com/component-hierarchy-3gHDLVtcxyHXSyFecgtspx
 
-### `npm run build`
+## Sample Wire Frames
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://whimsical.com/wireframe-v1-SXueA8E8PtG7NwzTYZZUUh
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As Clash Royale enthusiast, I want to browse card and deck data in a simple and ad-free environment.
+As a Clash Royale enthusiast, I want to quickly look at the stats of cards, and get only the information I want in a lightweight site.
+As a Clash Royale enthusiast, I want to fetch data quickly, easily and in a way that is intuitive.
+As a Clash Royale enthusiast, I want access to the latest data that is continuously updated, and have the option to browse older card/deck usage data.
+As a Clash Royale enthusiast, I want to see the dates of updates, and to filter out potentially outdated strategies.
+As a Clash Royale enthusiast, I want to nerd out and get my card data conveniently, thus allowing me enjoy the game more!
