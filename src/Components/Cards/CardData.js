@@ -4,12 +4,21 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Cards from './Cards';
 
+// const imgUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name}.png}`;
+
 function CardData() {
 	const [card, setCard] = useState(null);
 	const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
 	const { name } = useParams();
+	const { key } = useParams();
+	const picUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name.toLowerCase()}.png`;
 
-	// Data not fetching
+	// function fixUrlNames () {
+	// 	if ({name} ) {
+	// 		return <div>hi</div>>
+	// 	}
+	// }
+
 	useEffect(() => {
 		fetch(royaleAPI)
 			.then((res) => res.json())
@@ -27,11 +36,12 @@ function CardData() {
 	return (
 		<div>
 			<h1>{name} </h1>
-			{/* <h2>{clashData}</h2> */}
+
 			<p>Elixir Cost: {card.elixir} </p>
 			<p>Card Type: {card.type}</p>
 			<p>Card Rarity: {card.rarity}</p>
 			<p>{card.description}</p>
+			<img src={picUrl} alt="name" />
 		</div>
 	);
 }

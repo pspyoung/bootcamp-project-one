@@ -11,6 +11,7 @@ import { useParams } from 'react-router-dom';
 function App() {
 	const [clashData, setClashData] = useState([]);
 	const [cardsData, setCardsData] = useState({});
+	const [expData, setExpData] = useState({});
 
 	useEffect(() => {
 		const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
@@ -48,6 +49,10 @@ function App() {
 						element={
 							<CardData cardsData={cardsData} setCardsData={setCardsData} />
 						}
+					/>
+					<Route
+						path="/exp/:name"
+						element={<CardData expData={expData} setCardsData={setCardsData} />}
 					/>
 				</Routes>
 			</main>

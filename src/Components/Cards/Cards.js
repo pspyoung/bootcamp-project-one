@@ -9,7 +9,6 @@ function Cards(props) {
 				return (
 					<div element={element} key={element.id}>
 						<Link to={'/cards/' + element.name}> {element.name}</Link>
-						{/* <p>{element.elixir}</p> */}
 					</div>
 				);
 			})}
