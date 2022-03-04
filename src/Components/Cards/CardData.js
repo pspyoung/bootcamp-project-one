@@ -8,7 +8,6 @@ function CardData() {
 	const [card, setCard] = useState(null);
 	const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
 	const { name } = useParams();
-	const { elixir } = useParams();
 
 	// Data not fetching
 	useEffect(() => {
@@ -18,7 +17,7 @@ function CardData() {
 				const item = data.find((element) => {
 					return element.name === name;
 				});
-				console.log(item);
+				// console.log(item);
 				setCard(item);
 			});
 	}, []);
@@ -30,6 +29,9 @@ function CardData() {
 			<h1>{name} </h1>
 			{/* <h2>{clashData}</h2> */}
 			<p>Elixir Cost: {card.elixir} </p>
+			<p>Card Type: {card.type}</p>
+			<p>Card Rarity: {card.rarity}</p>
+			<p>{card.description}</p>
 		</div>
 	);
 }

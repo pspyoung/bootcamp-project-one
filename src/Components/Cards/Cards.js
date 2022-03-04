@@ -1,7 +1,4 @@
 import React from 'react';
-import Troops from './CardTypes/Troops';
-import Spells from './CardTypes/Spells';
-import Buildings from './CardTypes/Buildings';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
