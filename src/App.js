@@ -1,11 +1,9 @@
-import logo from './logo.svg';
+//App.js
 import './App.css';
 import { useState, useEffect } from 'react';
-// import Header from './Components/Header/Header';
 import Homepage from './Components/Homepage/Homepage';
 import Cards from './Components/Cards/Cards';
 import CardData from './Components/Cards/CardData';
-import Arenas from './Components/Arenas/Arenas';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 

@@ -1,7 +1,8 @@
-#### Clash Royale Fan Made project.
+# Clash Royale Fan Made project.
 
-No copyright intended. All data belongs to SuperCel, and http://api.clasyroyale.com
 A website that renders updated Clash Royale Card and Deck Info.
+
+No copyright intended. All data belongs to SuperCell.com, and http://api.clasyroyale.com
 
 ## Link to the API you plan to use
 
