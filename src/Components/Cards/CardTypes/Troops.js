@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 // import { useParams } from 'react-router-dom';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Troops(props) {
 	const [clashData, setClashData] = useState(null);
@@ -25,8 +26,9 @@ function Troops(props) {
 				console.log(clashData);
 			})}
 			{clashData.key} */}
-
-			{props.name}
+			<p>
+				<Link to={'/cards/:card' + props.name}></Link>
+			</p>
 		</div>
 	);
 }
