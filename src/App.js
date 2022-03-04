@@ -4,12 +4,26 @@ import { useState, useEffect } from 'react';
 // import Header from './Components/Header/Header';
 import Homepage from './Components/Homepage/Homepage';
 import Cards from './Components/Cards/Cards';
+import CardData from './Components/Cards/CardData';
 import Arenas from './Components/Arenas/Arenas';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function App() {
 	const [clashData, setClashData] = useState([]);
+	const [cardsData, setCardsData] = useState({});
+
+	useEffect(() => {
+		const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
+		fetch(royaleAPI)
+			.then((res) => res.json())
+			.then((data) => {
+				setClashData(data);
+				console.log(data);
+				// console.log(data[0]);
+			})
+			.catch(console.error);
+	}, []);
 
 	return (
 		<div className="mainContainer">
@@ -24,16 +38,18 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<Homepage />} />
-					<Route path="/cards" element={<Cards />} />
 					<Route
-						path="/cards/:key"
+						path="/cards"
 						element={
 							<Cards clashData={clashData} setClashData={setClashData} />
 						}
 					/>
-
-					{/* <Arenas />
-				// <Cards /> */}
+					<Route
+						path="/cards/:name"
+						element={
+							<CardData cardsData={cardsData} setCardsData={setCardsData} />
+						}
+					/>
 				</Routes>
 			</main>
 		</div>

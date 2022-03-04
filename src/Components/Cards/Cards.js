@@ -6,28 +6,15 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Cards(props) {
-	const [clashData, setClashData] = useState([]);
-
-	useEffect(() => {
-		const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
-		fetch(royaleAPI)
-			.then((res) => res.json())
-			.then((data) => {
-				setClashData(data);
-				console.log(data);
-				// console.log(data[0]);
-			})
-			.catch(console.error);
-	}, []);
+	// const [cardsData, setCardsData] = useState([]);
 
 	return (
 		<div className="cards-list">
-			{clashData.map((element) => {
+			{props.clashData.map((element) => {
 				return (
 					<div element={element} key={element.id}>
 						{/* <Troops name={element.name} description={element.description} /> */}
-						<Link to={'/cards/' + element.name}></Link>
-						{element.name}
+						<Link to={'/cards/' + element.name}> {element.name}</Link>
 
 						{/* <Spells />
 						<Buildings /> */}
