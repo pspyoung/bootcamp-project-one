@@ -4,11 +4,11 @@ A website that renders updated Clash Royale Card and Deck Info.
 
 No copyright intended. All data belongs to SuperCell.com, and http://api.clasyroyale.com
 
-## Link to the API you plan to use
+## Link to the API
 
 https://api.clashroyale.com/
 
-## Example data response you plan to use
+## Example data response from API
 
 ```
  {
@@ -46,9 +46,9 @@ https://whimsical.com/wireframe-v1-SXueA8E8PtG7NwzTYZZUUh
 
 ## User Stories
 
-As Clash Royale enthusiast, I want to browse card and deck data in a simple and ad-free environment.
-As a Clash Royale enthusiast, I want to quickly look at the stats of cards, and get only the information I want in a lightweight site.
-As a Clash Royale enthusiast, I want to fetch data quickly, easily and in a way that is intuitive.
-As a Clash Royale enthusiast, I want access to the latest data that is continuously updated, and have the option to browse older card/deck usage data.
-As a Clash Royale enthusiast, I want to see the dates of updates, and to filter out potentially outdated strategies.
-As a Clash Royale enthusiast, I want to nerd out and get my card data conveniently, thus allowing me enjoy the game more!
+-As Clash Royale enthusiast, I want to browse card and deck data in a simple and ad-free environment.
+-As a Clash Royale enthusiast, I want to quickly look at the stats of cards, and get only the information I want in a lightweight site.
+-As a Clash Royale enthusiast, I want to fetch data quickly, easily and in a way that is intuitive.
+-As a Clash Royale enthusiast, I want access to the latest data that is continuously updated, and have the option to browse older card/deck usage data.
+-As a Clash Royale enthusiast, I want to see the dates of updates, and to filter out potentially outdated strategies.
+-As a Clash Royale enthusiast, I want to nerd out and get my card data conveniently, thus allowing me enjoy the game more!
