@@ -37,7 +37,7 @@ function App() {
 					<h4>Card collection</h4>
 				</Link>
 				<Link to="/exp">
-					<h4> exp </h4>
+					<h4> Level Up Data </h4>
 				</Link>
 			</nav>
 			<main>

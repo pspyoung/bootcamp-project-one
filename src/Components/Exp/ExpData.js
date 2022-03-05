@@ -24,12 +24,9 @@ function ExpData() {
 	}
 	return (
 		<div>
-			<h1>{name} </h1>
-
-			{/* <p>Elixir Cost: {card.elixir} </p>
-			<p>Card Type: {card.type}</p>
-			<p>Card Rarity: {card.rarity}</p>
-			<p>{card.description}</p> */}
+			<h1>King Tower Level: {name} </h1>
+			<p> Summoner Level, Tower level are both level {name}</p>
+			<p> Exp to next level: {exp.exp_to_next_level}</p>
 		</div>
 	);
 }

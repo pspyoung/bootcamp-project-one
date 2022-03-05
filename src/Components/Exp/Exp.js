@@ -11,7 +11,7 @@ function Exp(props) {
 			.then((res) => res.json())
 			.then((data) => {
 				setExpData(data);
-				console.log(data);
+				// console.log(data);
 			})
 			.catch(console.error);
 	}, []);
@@ -31,5 +31,3 @@ function Exp(props) {
 }
 
 export default Exp;
-
-// 					<div key={element.name}> Level {element.name}</div>
