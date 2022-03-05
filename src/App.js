@@ -28,8 +28,8 @@ function App() {
 	}, []);
 
 	return (
-		<div className="mainContainer">
-			<div className="nav-links">
+		<div className="App">
+			<header className="App-header">
 				<nav className>
 					<Link to="/">
 						<h1> Go Home</h1>
@@ -41,23 +41,29 @@ function App() {
 						<h4> Level Up Data </h4>
 					</Link>
 				</nav>
-			</div>
-			<main>
+			</header>
+			<main className="main">
 				<Routes>
-					<Route path="/" element={<Homepage />} />
+					<Route className="homepage" path="/" element={<Homepage />} />
 					<Route
 						path="/cards"
 						element={
-							<Cards clashData={clashData} setClashData={setClashData} />
+							<Cards
+								className="cards"
+								clashData={clashData}
+								setClashData={setClashData}
+							/>
 						}
 					/>
 					<Route
+						className="cardsData"
 						path="/cards/:name"
 						element={
 							<CardData cardsData={cardsData} setCardsData={setCardsData} />
 						}
 					/>
 					<Route
+						classname="exp"
 						path="/exp/"
 						element={
 							<Exp expMainData={expMainData} setExpMainData={setExpData} />
@@ -65,6 +71,7 @@ function App() {
 					/>
 
 					<Route
+						className="expData"
 						path="/exp/:name"
 						element={<ExpData expData={expData} setExpData={setExpData} />}
 					/>
