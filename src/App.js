@@ -29,17 +29,19 @@ function App() {
 
 	return (
 		<div className="mainContainer">
-			<nav className="Header">
-				<Link to="/">
-					<h1> Go Home</h1>
-				</Link>
-				<Link to="/cards">
-					<h4>Card collection</h4>
-				</Link>
-				<Link to="/exp">
-					<h4> Level Up Data </h4>
-				</Link>
-			</nav>
+			<div className="nav-links">
+				<nav className>
+					<Link to="/">
+						<h1> Go Home</h1>
+					</Link>
+					<Link to="/cards">
+						<h4>Card collection</h4>
+					</Link>
+					<Link to="/exp">
+						<h4> Level Up Data </h4>
+					</Link>
+				</nav>
+			</div>
 			<main>
 				<Routes>
 					<Route path="/" element={<Homepage />} />
