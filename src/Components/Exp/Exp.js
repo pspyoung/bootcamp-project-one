@@ -22,7 +22,7 @@ function Exp(props) {
 			{expData.map((element) => {
 				return (
 					<div element={element} key={element.id}>
-						<Link to={'/exp/' + element.name}> {element.name} </Link>
+						<Link to={'/exp/' + element.name}> Level: {element.name} </Link>
 					</div>
 				);
 			})}

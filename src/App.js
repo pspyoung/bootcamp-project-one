@@ -29,7 +29,7 @@ function App() {
 
 	return (
 		<div className="mainContainer">
-			<nav>
+			<nav className="Header">
 				<Link to="/">
 					<h1> Go Home</h1>
 				</Link>

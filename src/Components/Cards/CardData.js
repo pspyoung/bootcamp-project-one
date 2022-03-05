@@ -10,10 +10,10 @@ function CardData() {
 	const [card, setCard] = useState(null);
 	const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
 	const { name } = useParams();
+
 	const { key } = useParams();
+
 	const picUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name.toLowerCase()}.png`;
-
-
 
 	useEffect(() => {
 		fetch(royaleAPI)
@@ -29,6 +29,7 @@ function CardData() {
 	if (card === null) {
 		return <div> Loading...</div>;
 	}
+
 	return (
 		<div>
 			<h1>{name} </h1>
@@ -36,6 +37,7 @@ function CardData() {
 			<p>Elixir Cost: {card.elixir} </p>
 			<p>Card Type: {card.type}</p>
 			<p>Card Rarity: {card.rarity}</p>
+			<p>Unique Key: {card.key}</p>
 			<p>{card.description}</p>
 			<img src={picUrl} alt="name" />
 		</div>
