@@ -13,11 +13,7 @@ function CardData() {
 	const { key } = useParams();
 	const picUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name.toLowerCase()}.png`;
 
-	// function fixUrlNames () {
-	// 	if ({name} ) {
-	// 		return <div>hi</div>>
-	// 	}
-	// }
+
 
 	useEffect(() => {
 		fetch(royaleAPI)

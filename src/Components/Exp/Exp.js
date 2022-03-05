@@ -21,13 +21,9 @@ function Exp(props) {
 		<div className="exp-list">
 			{expData.map((element) => {
 				return (
-					<div key={element.name}> Level {element.name}</div>
-					// <div element={element} key={element.level_up_chest}>
-					// 	<Link to={'/exp/' + 'level' + element.name}>
-					// 		{' '}
-					// 		"Level" + {element.name}
-					// 	</Link>
-					// </div>
+					<div element={element} key={element.id}>
+						<Link to={'/exp/' + element.name}> {element.name} </Link>
+					</div>
 				);
 			})}
 		</div>
@@ -35,3 +31,5 @@ function Exp(props) {
 }
 
 export default Exp;
+
+// 					<div key={element.name}> Level {element.name}</div>

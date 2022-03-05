@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Exp from './Exp';
 
-function expData() {
+function ExpData() {
 	const [exp, setExp] = useState(null);
-	const expPI = 'https://royaleapi.github.io/cr-api-data/json/exp_levels.json';
+	const expAPI = 'https://royaleapi.github.io/cr-api-data/json/exp_levels.json';
 	const { name } = useParams();
 	useEffect(() => {
 		fetch(expAPI)
@@ -19,7 +19,7 @@ function expData() {
 				setExp(exPitem);
 			});
 	}, []);
-	if (card === null) {
+	if (exp === null) {
 		return <div> Loading...</div>;
 	}
 	return (
@@ -34,4 +34,4 @@ function expData() {
 	);
 }
 
-export default expdData;
+export default ExpData;

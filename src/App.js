@@ -5,12 +5,14 @@ import Homepage from './Components/Homepage/Homepage';
 import Cards from './Components/Cards/Cards';
 import CardData from './Components/Cards/CardData';
 import Exp from './Components/Exp/Exp';
+import ExpData from './Components/Exp/ExpData';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function App() {
 	const [clashData, setClashData] = useState([]);
 	const [cardsData, setCardsData] = useState({});
+	const [expMainData, setExpMainData] = useState([]);
 	const [expData, setExpData] = useState({});
 
 	useEffect(() => {
@@ -34,6 +36,9 @@ function App() {
 				<Link to="/cards">
 					<h4>Card collection</h4>
 				</Link>
+				<Link to="/exp">
+					<h4> exp </h4>
+				</Link>
 			</nav>
 			<main>
 				<Routes>
@@ -51,12 +56,18 @@ function App() {
 						}
 					/>
 					<Route
+						path="/exp/"
+						element={
+							<Exp expMainData={expMainData} setExpMainData={setExpData} />
+						}
+					/>
+
+					<Route
 						path="/exp/:name"
-						element={<CardData expData={expData} setCardsData={setCardsData} />}
+						element={<ExpData expData={expData} setExpData={setExpData} />}
 					/>
 				</Routes>
-			</main>
-			<Exp />
+			</main>{' '}
 		</div>
 	);
 }
