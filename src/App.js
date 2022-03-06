@@ -8,6 +8,7 @@ import Exp from './Components/Exp/Exp';
 import ExpData from './Components/Exp/ExpData';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { DataContext } from './Components/DataContext';
 
 function App() {
 	const [clashData, setClashData] = useState([]);
@@ -26,6 +27,7 @@ function App() {
 			})
 			.catch(console.error);
 	}, []);
+	
 
 	return (
 		<div className="App">
@@ -43,39 +45,41 @@ function App() {
 				</nav>
 			</header>
 			<main className="main">
-				<Routes>
-					<Route className="homepage" path="/" element={<Homepage />} />
-					<Route
-						path="/cards"
-						element={
-							<Cards
-								className="cards"
-								clashData={clashData}
-								setClashData={setClashData}
-							/>
-						}
-					/>
-					<Route
-						className="cardsData"
-						path="/cards/:name"
-						element={
-							<CardData cardsData={cardsData} setCardsData={setCardsData} />
-						}
-					/>
-					<Route
-						classname="exp"
-						path="/exp/"
-						element={
-							<Exp expMainData={expMainData} setExpMainData={setExpData} />
-						}
-					/>
+				<DataContext.Provider value={{ clashData, setCardsData }}>
+					<Routes>
+						<Route className="homepage" path="/" element={<Homepage />} />
+						<Route
+							path="/cards"
+							element={
+								<Cards
+									className="cards"
+									clashData={clashData}
+									setClashData={setClashData}
+								/>
+							}
+						/>
+						<Route
+							className="cardsData"
+							path="/cards/:name"
+							element={
+								<CardData cardsData={cardsData} setCardsData={setCardsData} />
+							}
+						/>
+						<Route
+							classname="exp"
+							path="/exp/"
+							element={
+								<Exp expMainData={expMainData} setExpMainData={setExpData} />
+							}
+						/>
 
-					<Route
-						className="expData"
-						path="/exp/:name"
-						element={<ExpData expData={expData} setExpData={setExpData} />}
-					/>
-				</Routes>
+						<Route
+							className="expData"
+							path="/exp/:name"
+							element={<ExpData expData={expData} setExpData={setExpData} />}
+						/>
+					</Routes>
+				</DataContext.Provider>
 			</main>{' '}
 		</div>
 	);
