@@ -6,6 +6,8 @@ import Cards from './Components/Cards/Cards';
 import CardData from './Components/Cards/CardData';
 import Exp from './Components/Exp/Exp';
 import ExpData from './Components/Exp/ExpData';
+
+import Troops from './Components/Cards/CardTypes/Troops';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { DataContext } from './Components/DataContext';
@@ -27,7 +29,6 @@ function App() {
 			})
 			.catch(console.error);
 	}, []);
-	
 
 	return (
 		<div className="App">
@@ -80,7 +81,7 @@ function App() {
 						/>
 					</Routes>
 				</DataContext.Provider>
-			</main>{' '}
+			</main>
 		</div>
 	);
 }

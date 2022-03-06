@@ -13,7 +13,6 @@ function CardData() {
 
 	const { key } = useParams();
 
-	const picUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name.toLowerCase()}.png`;
 	const newPicUrl = 'https://cdn.royaleapi.com/static/img/cards-150/';
 
 	useEffect(() => {
