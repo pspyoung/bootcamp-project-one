@@ -1,0 +1,5 @@
+.cardLinksBody {
+	display: grid;
+	grid-column: 1;
+	text-align: left;
+}

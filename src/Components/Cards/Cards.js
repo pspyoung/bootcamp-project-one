@@ -2,10 +2,11 @@ import React from 'react';
 import { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../DataContext';
+import './Cards.css';
 
 function Cards(props) {
 	const dataFromUseContext = useContext(DataContext);
-	console.log(dataFromUseContext);
+	// console.log(dataFromUseContext);
 	const [allCardsData, setAllCardsData] = useState([]);
 	const [troopCardsData, setTroopCardsData] = useState([]);
 	const [spellCardsData, setSpellCardsData] = useState([]);
@@ -20,6 +21,8 @@ function Cards(props) {
 	// make a link for each set of cards I want to show
 	// make a click handler that sets currently displayed cards state to selected link
 
+	//Conditonally render data in App component
+	// Call state in Cards component
 	// if display state === troops, show troops state
 	// if display state === spells, show spells state
 	// if display state === buildings, show buildings state
@@ -31,13 +34,14 @@ function Cards(props) {
 
 	return (
 		<div className="cards-list">
-			<button>All Cards</button>
-			<button>Troops</button>
-			<button>Spells</button>
-			<button>Buildings</button>
+			{/* Buttons for a future feature */}
+			{/* <button className="allCards">All Cards</button>
+			<button className="troopsCards">Troops</button>
+			<button className="spellsCards">Spells</button>
+			<button className="buildingsCards">Buildings</button> */}
 			{props.clashData.map((element) => {
 				return (
-					<div element={element} key={element.id}>
+					<div element={element} key={element.id} className="cardLinksbody">
 						<Link to={'/cards/' + element.name}> {element.name}</Link>
 					</div>
 				);

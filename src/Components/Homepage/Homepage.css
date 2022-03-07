@@ -1,4 +1,14 @@
-img {
-	max-width: 100vw;
-	max-height: 80vh;
+.HomepageBody {
+	background-image: url('https://user-images.githubusercontent.com/90462032/156694656-152f409a-3019-4ecb-b5d6-e23e07fcf8af.png');
+	background-size: contain;
+	max-height: 75vh;
+	max-width: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+p {
+	font-weight: bold;
+	color: darkgreen;
 }
