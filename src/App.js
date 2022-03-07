@@ -38,10 +38,10 @@ function App() {
 						<h1> Go Home</h1>
 					</Link>
 					<Link to="/cards">
-						<h4>Card collection</h4>
+						<h4>Card Collection</h4>
 					</Link>
 					<Link to="/exp">
-						<h4> Level Up Data </h4>
+						<h4> King Tower Level Up Data </h4>
 					</Link>
 				</nav>
 			</header>

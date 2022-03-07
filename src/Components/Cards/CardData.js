@@ -13,7 +13,7 @@ function CardData() {
 
 	const { key } = useParams();
 
-	const newPicUrl = 'https://cdn.royaleapi.com/static/img/cards-150/';
+	const picUrl = 'https://cdn.royaleapi.com/static/img/cards-150/';
 
 	useEffect(() => {
 		fetch(royaleAPI)
@@ -36,9 +36,8 @@ function CardData() {
 			<p>Elixir Cost: {card.elixir} </p>
 			<p>Card Type: {card.type}</p>
 			<p>Card Rarity: {card.rarity}</p>
-			<p>Unique Key: {card.key}</p>
 			<p>{card.description}</p>
-			<img src={`${newPicUrl}${card.key}.png`} alt="name" />
+			<img src={`${picUrl}${card.key}.png`} alt="name" />
 		</div>
 	);
 }

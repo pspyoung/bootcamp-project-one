@@ -6,6 +6,11 @@ import { DataContext } from '../DataContext';
 function Cards(props) {
 	const dataFromUseContext = useContext(DataContext);
 	console.log(dataFromUseContext);
+	const [allCardsData, setAllCardsData] = useState([]);
+	const [troopCardsData, setTroopCardsData] = useState([]);
+	const [spellCardsData, setSpellCardsData] = useState([]);
+	const [buildingCardsData, setBuildingCardsData] = useState([]);
+
 	// set a state for currently displayed cards
 	// set a state for troops
 	// set a state for buildings
@@ -21,13 +26,16 @@ function Cards(props) {
 
 	// options: 1) set up ternary before props.clashData.map
 	// 2) set up a separate variable for list of troops, buildings, and spells -> they are a map of the states, that builds those elements/cards
-	// put ternary in return section -> if state === troops, return in troops 
+	// put ternary in return section -> if state === troops, return in troops
 	// put an "all" options in those links to show all cards instead of the short lists
 
 	return (
 		<div className="cards-list">
+			<button>All Cards</button>
+			<button>Troops</button>
+			<button>Spells</button>
+			<button>Buildings</button>
 			{props.clashData.map((element) => {
-				// console.log(element.key);
 				return (
 					<div element={element} key={element.id}>
 						<Link to={'/cards/' + element.name}> {element.name}</Link>
