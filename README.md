@@ -1,12 +1,13 @@
 # Clash Royale Fan Made project.
 
-A website that renders updated Clash Royale Card and Deck Info.
+A website that renders updated Clash Royale Card and Exp Info.
 
-No copyright intended. All data belongs to SuperCell.com, and http://api.clasyroyale.com
+No copyright intended. All data belongs to https://supercell.com/en/, https://royaleapi.com/, and https://github.com/royaleapi.
+Fanart by xofks12: https://www.deviantart.com/xofks12/art/Clash-Royale-The-royale-arena-612960629
 
 ## Link to the API
 
-https://api.clashroyale.com/
+https://royaleapi.github.io/cr-api-data/
 
 ## Example data response from API
 

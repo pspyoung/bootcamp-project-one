@@ -1,3 +1,7 @@
+body {
+	background-color: #f1faee;
+}
+
 .App {
 	text-align: center;
 	display: grid;
@@ -5,12 +9,12 @@
 	grid-template-rows: 1fr 4fr;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+	background-color: #f1faee;
 }
 
 .App-header {
-	/* background-color: #282c34; */
 	font-size: 20px;
-	background-color: darkseagreen;
+	background-color: #a8dadc;
 	height: 15vh;
 	grid-column: 1 / span 3;
 	grid-row: 1;
@@ -106,4 +110,8 @@ h4 {
 
 .linkOne {
 	text-align: left;
+}
+
+a {
+	color: #1d3557;
 }
