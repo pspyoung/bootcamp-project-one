@@ -39,11 +39,15 @@ id: 26000006
 
 ## Sample component hierarchy
 
-https://whimsical.com/component-hierarchy-3gHDLVtcxyHXSyFecgtspx
+https://whimsical.com/component-hierarchy-v2-1522fkvbLFDBsuk5MmowSQ
 
 ## Sample Wire Frames
 
-https://whimsical.com/wireframe-v1-SXueA8E8PtG7NwzTYZZUUh
+Card Description example:
+https://whimsical.com/wireframe-v2-card-46fhJspMP54GsaTLNFRKzU
+
+Homepage example:
+https://whimsical.com/wireframe-v2-home-ETc2homYNdBM5YycJfu5hU
 
 ## User Stories
 
