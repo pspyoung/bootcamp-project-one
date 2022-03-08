@@ -5,12 +5,11 @@ import { DataContext } from '../DataContext';
 import './Cards.css';
 
 function Cards(props) {
-	const dataFromUseContext = useContext(DataContext);
-	// console.log(dataFromUseContext);
-	const [allCardsData, setAllCardsData] = useState([]);
-	const [troopCardsData, setTroopCardsData] = useState([]);
-	const [spellCardsData, setSpellCardsData] = useState([]);
-	const [buildingCardsData, setBuildingCardsData] = useState([]);
+	// States for future use
+	// const [allCardsData, setAllCardsData] = useState([]);
+	// const [troopCardsData, setTroopCardsData] = useState([]);
+	// const [spellCardsData, setSpellCardsData] = useState([]);
+	// const [buildingCardsData, setBuildingCardsData] = useState([]);
 
 	// set a state for currently displayed cards
 	// set a state for troops

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Exp from './Exp';
+import './Exp.css';
 
 function ExpData() {
 	const [exp, setExp] = useState(null);

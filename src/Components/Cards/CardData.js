@@ -30,14 +30,30 @@ function CardData() {
 		return <div> Loading...</div>;
 	}
 	return (
-		<div>
-			<h1>{name} </h1>
-
-			<p>Elixir Cost: {card.elixir} </p>
-			<p>Card Type: {card.type}</p>
-			<p>Card Rarity: {card.rarity}</p>
-			<p>{card.description}</p>
-			<img src={`${picUrl}${card.key}.png`} alt="name" />
+		<div className="cardDataContainer">
+			<div className="cardData">
+				<div className="troopName">
+					<h1>{name} </h1>
+				</div>
+				<div className="pic">
+					<img src={`${picUrl}${card.key}.png`} alt="name" />
+				</div>
+				<div className="rightCardData">
+					<p>
+						Elixir Cost: <i class="fa-solid fa-droplet"></i>{' '}
+						<span className="cardDataValue">{card.elixir}</span>
+					</p>
+					<p>
+						Card Type: <span className="cardDataValue">{card.type}</span>
+					</p>
+					<p>
+						Card Rarity: <span>{card.rarity}</span>
+					</p>
+				</div>
+				<div className="description">
+					<p>{card.description}</p>
+				</div>
+			</div>
 		</div>
 	);
 }
