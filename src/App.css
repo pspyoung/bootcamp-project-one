@@ -10,6 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	background-color: #f1faee;
+	max-height: 100vh;
 }
 
 .App-header {
@@ -103,7 +104,7 @@ h4 {
 
 .App-bar {
 	display: grid;
-	grid-template-columns: 6fr 1fr 1fr;
+	grid-template-columns: 10fr 1fr 1fr;
 }
 
 .linkOne {

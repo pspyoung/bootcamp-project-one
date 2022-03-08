@@ -47,7 +47,7 @@ function App() {
 					</div>
 					<div className="linkThree">
 						<Link to="/exp">
-							<h4 class-name="level-up-link"> King Tower Level Up Data </h4>
+							<h4 class-name="level-up-link"> King Tower Level Data </h4>
 						</Link>
 					</div>
 				</nav>
