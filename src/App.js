@@ -2,6 +2,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Homepage from './Components/Homepage/Homepage';
+import About from './Components/About/About';
 import Cards from './Components/Cards/Cards';
 import CardData from './Components/Cards/CardData';
 import Exp from './Components/Exp/Exp';
@@ -21,7 +22,6 @@ function App() {
 			.then((res) => res.json())
 			.then((data) => {
 				setClashData(data);
-	
 			})
 			.catch(console.error);
 	}, []);
@@ -33,6 +33,11 @@ function App() {
 					<div className="linkOne">
 						<Link to="/">
 							<h1 className="homeButton"> Go Home</h1>
+						</Link>
+					</div>
+					<div className="linkFour">
+						<Link to="/about">
+							<h4 className="about-link">About</h4>
 						</Link>
 					</div>
 					<div className="linkTwo">
@@ -51,6 +56,7 @@ function App() {
 				<div className="component-container">
 					<Routes>
 						<Route path="/" element={<Homepage />} />
+						<Route path="/about" element={<About />} />
 						<Route
 							className="cardsRoute"
 							path="/cards"

@@ -27,6 +27,16 @@ body {
 h4 {
 	font-weight: lighter;
 }
+
+.linkFour {
+	grid-column: 1;
+	text-align: left;
+}
+
+.linkThree {
+	grid-column: 3;
+	text-align: right;
+}
 .card-collections-link {
 	grid-column: 2;
 	font-weight: lighter;
@@ -81,6 +91,7 @@ h4 {
 .cards-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 30px;
 }
 
 .HomepageBody {
@@ -88,10 +99,9 @@ h4 {
 	grid-row: 1;
 }
 
-
 .App-bar {
 	display: grid;
-	grid-template-columns: 4fr 1fr 1fr;
+	grid-template-columns: 6fr 1fr 1fr;
 }
 
 .linkOne {
