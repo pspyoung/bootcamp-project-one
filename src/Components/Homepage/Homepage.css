@@ -1,9 +1,11 @@
 .HomepageBody {
-	background-image: url(CR\ Fanart.png);
+	background-image: url('https://user-images.githubusercontent.com/90462032/156694656-152f409a-3019-4ecb-b5d6-e23e07fcf8af.png');
 	background-size: cover;
+	/* max-height: 75vh; */
+	max-width: auto;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 75vh;
 }
 
 p {
