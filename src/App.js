@@ -21,8 +21,7 @@ function App() {
 			.then((res) => res.json())
 			.then((data) => {
 				setClashData(data);
-				// console.log(data);
-				// console.log(data[0]);
+	
 			})
 			.catch(console.error);
 	}, []);

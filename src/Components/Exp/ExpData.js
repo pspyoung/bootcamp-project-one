@@ -16,7 +16,6 @@ function ExpData() {
 				const exPitem = data.find((element) => {
 					return element.name === name;
 				});
-				// console.log(item);
 				setExp(exPitem);
 			});
 	}, []);
@@ -27,7 +26,7 @@ function ExpData() {
 		<div>
 			<h1>
 				{' '}
-				<i class="fa-solid fa-crown"></i> King Tower Level: {name}{' '}
+				<i className="fa-solid fa-crown"></i> King Tower Level: {name}{' '}
 			</h1>
 			<p> Summoner and princess Tower levels are both level {name}</p>
 			<p>

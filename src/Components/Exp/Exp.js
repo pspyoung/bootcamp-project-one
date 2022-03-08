@@ -12,17 +12,15 @@ function Exp(props) {
 			.then((res) => res.json())
 			.then((data) => {
 				setExpData(data);
-				// console.log(data);
 			})
 			.catch(console.error);
 	}, []);
 
 	return (
-		// <div> Hello</div>
 		<div className="exp-list">
 			{expData.map((element) => {
 				return (
-					<div element={element} key={element.id}>
+					<div element={element} key={element.name}>
 						<Link to={'/exp/' + element.name}> Level: {element.name} </Link>
 					</div>
 				);

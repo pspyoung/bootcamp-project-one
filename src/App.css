@@ -24,19 +24,6 @@ body {
 	align-items: center;
 }
 
-/* .linkOne {
-	grid-column: 1;
-}
-
-.linkTwo {
-	grid-column: 2;
-} */
-
-/* .level-up-link {
-	grid-column: 3;
-	font-weight: lighter;
-} */
-
 h4 {
 	font-weight: lighter;
 }
@@ -101,11 +88,6 @@ h4 {
 	grid-row: 1;
 }
 
-/* .component-container {
-	display: grid;
-	grid-template-columns: 3;
-	grid-template-rows: 1;
-} */
 
 .App-bar {
 	display: grid;

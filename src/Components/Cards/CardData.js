@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import Cards from './Cards';
 
-// const imgUrl = `https://cdn.royaleapi.com/static/img/cards-150/${name}.png}`;
-
 function CardData() {
 	const [card, setCard] = useState(null);
 	const royaleAPI = 'https://royaleapi.github.io/cr-api-data/json/cards.json';
@@ -22,7 +20,6 @@ function CardData() {
 				const item = data.find((element) => {
 					return element.name === name;
 				});
-				// console.log(item);
 				setCard(item);
 			});
 	}, []);
@@ -40,7 +37,7 @@ function CardData() {
 				</div>
 				<div className="rightCardData">
 					<p>
-						Elixir Cost: <i class="fa-solid fa-droplet"></i>{' '}
+						Elixir Cost: <i className="fa-solid fa-droplet"></i>{' '}
 						<span className="cardDataValue">{card.elixir}</span>
 					</p>
 					<p>
