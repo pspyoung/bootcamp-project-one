@@ -1,9 +1,22 @@
-# Clash Royale Fan Made project.
+# Clash Royale Fan Made Project.
+
+Project Link:
+https://crcardsapi.netlify.app/
 
 A website that renders updated Clash Royale Card and Exp Info.
 
 No copyright intended. All data belongs to https://supercell.com/en/, https://royaleapi.com/, and https://github.com/royaleapi.
 Fanart by xofks12: https://www.deviantart.com/xofks12/art/Clash-Royale-The-royale-arena-612960629
+
+## Technologies Used
+
+- Javascript
+- CSS
+- Html
+- React
+- FontAwesome.com for icons
+- netlify.com to host site
+- whimsical.com for wireframes
 
 ## Link to the API
 
@@ -51,9 +64,12 @@ https://whimsical.com/wireframe-v2-home-ETc2homYNdBM5YycJfu5hU
 
 ## User Stories
 
--As Clash Royale enthusiast, I want to browse card and deck data in a simple and ad-free environment.
--As a Clash Royale enthusiast, I want to quickly look at the stats of cards, and get only the information I want in a lightweight site.
--As a Clash Royale enthusiast, I want to fetch data quickly, easily and in a way that is intuitive.
--As a Clash Royale enthusiast, I want access to the latest data that is continuously updated, and have the option to browse older card/deck usage data.
--As a Clash Royale enthusiast, I want to see the dates of updates, and to filter out potentially outdated strategies.
--As a Clash Royale enthusiast, I want to nerd out and get my card data conveniently, thus allowing me enjoy the game more!
+- As a user, I want to have access to all Clash Royale Cards so I can strategize my gameplay.
+
+- As a user, I want to see the card descriptions, so I can have more fun with the game.
+
+- As a user, I want to easily access all the cards, so I can get the specific information that I need without distractions.
+
+- As a user, I want know where I can find card information easily, so I can save time searching for basic card data.
+
+- As a user, I want to see how much EXP I need to level my king tower, so I will stay motivated with my card donations.
