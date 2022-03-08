@@ -25,9 +25,16 @@ function ExpData() {
 	}
 	return (
 		<div>
-			<h1>King Tower Level: {name} </h1>
+			<h1>
+				{' '}
+				<i class="fa-solid fa-crown"></i> King Tower Level: {name}{' '}
+			</h1>
 			<p> Summoner and princess Tower levels are both level {name}</p>
-			<p> Exp to reach: {exp.exp_to_next_level}</p>
+			<p>
+				{' '}
+				Exp to reach: <span className="arrowUp">⬆</span>
+				{exp.exp_to_next_level}
+			</p>
 		</div>
 	);
 }
